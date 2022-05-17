@@ -2,3 +2,4 @@
 
 Integrantes:
 Ian Figueroa
+Pablo Salerno
