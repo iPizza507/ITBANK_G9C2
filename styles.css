@@ -1,1 +1,7 @@
-nav{background-image: url(./imagen/logo.png)!important; }
+nav{
+    background-image: url(./imagen/logo.png)!important; 
+}
+.Lista-footer{
+    background-color:aqua;
+    list-style:none;
+}
