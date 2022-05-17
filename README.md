@@ -1,4 +1,5 @@
 # ITBANK_G9C2
 
 Integrantes:
-Ian Figueroa
+Ian Figueroa,
+Pablo Salerno
