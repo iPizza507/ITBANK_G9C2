@@ -1,7 +1,17 @@
-nav{
-    background-image: url(./imagen/logo.png)!important; 
+body{
+    background-image: url(./imagen/fondo.jpg)!important; 
 }
 .Lista-footer{
-    background-color:aqua;
+    background-color:white;
     list-style:none;
+}
+
+#tituloNav {
+
+    color:white
+}
+
+p {
+
+    color: white;
 }
