@@ -1,5 +1,6 @@
 body{
-    background-image: url(./imagen/fondo.jpg)!important; 
+    background-image: url(./imagen/fondo.jpg)!important;
+    background-repeat: repeat;
 }
 .Lista-footer{
     background-color:white;
