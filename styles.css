@@ -4,14 +4,21 @@ body{
 .Lista-footer{
     background-color:white;
     list-style:none;
+    border-radius: 25px
 }
 
 #tituloNav {
 
-    color:white
+    color:white;
+    text-align: center;
 }
 
 p {
 
     color: white;
+}
+
+#imagenLogo {
+
+    border-radius: 25px
 }
