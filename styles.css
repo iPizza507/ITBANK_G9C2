@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-image: url(./imagen/fondo.jpg)!important;
     background-repeat: no-repeat;
@@ -12,8 +15,6 @@ header{
     margin: 0;
     padding: 0;
 }
-
-
 #tituloNav {
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
@@ -22,27 +23,13 @@ header{
     font-size: 100px;
 }
 
-p {
-
-    color: rgb(0, 0, 0);
-}
-
-#imagenLogo {
-    border-radius: 0px
-}
-
-img {
+#imagenLogo{
     max-width: 75%;
     height: auto;
-  }
-
-  #copyright {
+}
+#copyright {
     margin-left: 3px;
     color: grey;
-  }
-
-  *{
-    box-sizing: border-box;
 }
 .container{
     width: 100%;
@@ -71,11 +58,6 @@ input[type="password"]{
     border-radius: 3px;
     margin-left: 10px;
 }
-.icon{
-    min-width: 50px;
-    text-align: center;
-    color: #999;
-}
 .button{
     border: none;
     width: 100%;
@@ -90,12 +72,9 @@ input[type="password"]{
 .button:hover{
     background: cadetblue;
 }
-p{
-    text-align: center;
-}
 .link{
     text-decoration: none;
-      color: #1a2537;
+    color: #1a2537;
     font-weight: 600;
 }
 .link:hover{
