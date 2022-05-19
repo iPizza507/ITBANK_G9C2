@@ -8,13 +8,6 @@ body{
 header{
     margin: 20px 0;
 }
-.Lista-footer{
-    background-color:white;
-    list-style:none;
-    border-radius: 25px;
-    margin: 0;
-    padding: 0;
-}
 #tituloNav {
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
@@ -79,6 +72,13 @@ input[type="password"]{
 }
 .link:hover{
      color: cadetblue;
+}
+.Lista-form{
+    background-color:white;
+    list-style:none;
+    border-radius: 25px;
+    margin: 0;
+    padding: 0;
 }
 @media (max-width:600px){
     #tituloNav{
