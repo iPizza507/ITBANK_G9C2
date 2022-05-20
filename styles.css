@@ -15,11 +15,10 @@ header{
     -webkit-text-stroke: 2px black;
     font-weight: bold;
     font-size: 100px;
-    margin: 0;
+    margin: 0 20px;
 }
 #img-header{
     height: 70px;
-    margin-right: 20px;
 }
 #imagenLogo{
     max-width: 75%;
@@ -36,7 +35,7 @@ header{
 .formulario{
     background: #fff;
     padding: 3px;
-    margin-top: 20px !important;
+    margin-top: 70px !important;
     margin: auto;
     width: 500px;
     border-radius: 2%;
