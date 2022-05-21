@@ -55,4 +55,14 @@ width: 340px;
     border-radius: 0px;
   } 
 }
- 
+
+.Lista-footer-home{
+  list-style: none;
+}
+.Lista-footer-home li{
+  display: inline;
+}
+.Lista-footer-home li a{
+  text-decoration: none;
+  color: black;
+}

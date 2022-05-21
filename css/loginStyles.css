@@ -2,13 +2,11 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url()!important;
+    background-image: url(../imagen/fondoLogin.jpg)!important;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#img-header{
-    height: 70px;
-}
+
 #imagenLogo{
     max-width: 75%;
     height: auto;
@@ -22,10 +20,11 @@ body{
     padding: 15px;
 }
 .formulario{
-    background: #fff;
+    background: none;
     padding: 3px;
     margin-top: 70px !important;
     margin: auto;
+    margin: 70px auto 200px auto;
     width: 500px;
     border-radius: 2%;
 }
@@ -66,18 +65,21 @@ body{
      color: cadetblue;
 }
 .Lista-footer{
-    background-color:white;
+    background-color:none;
     list-style:none;
     border-radius: 25px;
     margin: 0;
     padding: 0;
 }
+
 @media (max-width:600px){
-    #tituloHeader{
-    font-size: 70px;
-    }
     .formulario{
         width: 100%;
         border-radius: 0px;
     }
+}
+
+.img-header{
+    height: 70px;
+    margin: 0 20px;
 }
