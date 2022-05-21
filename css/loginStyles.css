@@ -5,6 +5,7 @@ section{
     background-image: url(../imagen/fondoLogin.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 0px;
 }
 .img-header{
     height: 70px;
@@ -17,9 +18,7 @@ section{
 .formulario{
     background: none;
     padding: 3px;
-    margin-top: 70px !important;
-    margin: auto;
-    margin: 70px auto 200px auto;
+    margin: 20px auto;
     width: 500px;
     border-radius: 2%;
 }
@@ -65,7 +64,6 @@ section{
     border-radius: 25px;
     margin: 0;
     padding: 0;
-    width: 200px;
 }
 
 @media (max-width:600px){
