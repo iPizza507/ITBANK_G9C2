@@ -61,7 +61,6 @@
   text-decoration-color: grey;
 }
 
-
 @media (max-width:600px){ 
   .card{
     width: 100%;
