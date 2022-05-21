@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../imagen/fondo.jpg)!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header, footer{
+    background-color:   #F7F7F7;
+}
+.nav-hover a:hover{
+    text-decoration: underline;
+    text-decoration-color: grey;
+}
+.img-header{
+    height: 70px;
+    margin: 0 20px;
+}
+.section-title{
+    height: 700px;
+    text-align: center;
+}
+.section-title h1{
+    font-family: 'Cormorant Garamond', serif;
+    -webkit-text-stroke: 2px white;
+    font-weight: bold;
+    font-size: 120px;
+    margin: 0 20px;
+    color: white;
+}
+.Lista-footer{
+    list-style:none;
+    margin: 0;
+}
+footer{
+    height: 100px;
+}
