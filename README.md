@@ -2,5 +2,5 @@
 
 Integrantes:
 Ian Figueroa,
-Pablo Salerno
+Pablo Salerno,
 Lucas Lisandro Arroyo
