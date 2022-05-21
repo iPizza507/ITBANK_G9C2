@@ -43,18 +43,7 @@
   text-decoration: none;
   font-size: 25px;
   display: block;
-}  
-.card {
-margin-bottom: 20px;
-margin-top: 20px;
-width: 340px;
-}
-@media (max-width:600px){ 
-  .card{
-    width: 100%;
-    border-radius: 0px;
-  } 
-}
+} 
 
 .Lista-footer-home{
   list-style: none;
@@ -65,4 +54,17 @@ width: 340px;
 .Lista-footer-home li a{
   text-decoration: none;
   color: black;
+}
+
+.Lista-footer-home li a:hover{
+  text-decoration: underline;
+  text-decoration-color: grey;
+}
+
+
+@media (max-width:600px){ 
+  .card{
+    width: 100%;
+    border-radius: 0px;
+  } 
 }
