@@ -1,19 +1,14 @@
 *{
     box-sizing: border-box;
 }
-body{
-    background-image: url(../imagen/fondoLogin.jpg)!important;
+section{
+    background-image: url(../imagen/fondoLogin.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-#imagenLogo{
-    max-width: 75%;
-    height: auto;
-}
-#copyright {
-    margin-left: 3px;
-    color: grey;
+.img-header{
+    height: 70px;
+    margin: 0 20px;
 }
 .container{
     width: 100%;
@@ -31,7 +26,7 @@ body{
 .title-form{
     text-align: center;
     color: #1a2537;
-    font-size: 40px;
+    font-size: 70px;
     margin: 10px;
 }
 .input-form{
@@ -70,6 +65,7 @@ body{
     border-radius: 25px;
     margin: 0;
     padding: 0;
+    width: 200px;
 }
 
 @media (max-width:600px){
@@ -77,9 +73,4 @@ body{
         width: 100%;
         border-radius: 0px;
     }
-}
-
-.img-header{
-    height: 70px;
-    margin: 0 20px;
 }
