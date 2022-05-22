@@ -36,3 +36,30 @@ header, footer{
 footer{
     height: 100px;
 }
+
+@media all and (min-width: 600px) and (max-width: 1023px) {
+
+    .section-title{
+
+        height: 500px;
+        
+    }
+    
+
+}
+
+@media all and (max-width: 599px) {
+
+    .section-title{
+
+        height: 300px;
+        
+    }
+
+    .section-title h1{
+        
+        font-size: 80px;
+        
+    }
+
+}
