@@ -61,5 +61,19 @@ footer{
         font-size: 80px;
         
     }
-
+    .nav-hover a{
+        font-size: 15px;
+        display: block !important;
+    }
+    .img-header{
+        opacity: 0 ;
+        display: none;
+    }
+    .nav-hover{
+        display: block !important;
+        text-align: center;
+        width: 100% !important;
+    
+    }
+    
 }
