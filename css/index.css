@@ -13,7 +13,7 @@ header, footer{
     text-decoration: underline;
     text-decoration-color: grey;
 }
-.img-header{
+.img-header, .img-footer{
     height: 70px;
     margin: 0 20px;
 }
@@ -33,47 +33,41 @@ header, footer{
     list-style:none;
     margin: 0;
 }
-footer{
-    height: 100px;
+.footer-index{
+    height: 200px;
 }
 
 @media all and (min-width: 600px) and (max-width: 1023px) {
-
     .section-title{
-
         height: 500px;
-        
     }
-    
-
+    .footer-index{
+        height: 120px;
+    }
 }
 
 @media all and (max-width: 599px) {
-
     .section-title{
-
         height: 300px;
-        
     }
 
     .section-title h1{
-        
         font-size: 80px;
-        
     }
+
     .nav-hover a{
         font-size: 15px;
-        display: block !important;
+        display: block ;
     }
+
     .img-header{
         opacity: 0 ;
         display: none;
     }
+
     .nav-hover{
         display: block !important;
         text-align: center;
-        width: 100% !important;
-    
     }
     
 }
