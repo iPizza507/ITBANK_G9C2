@@ -45,7 +45,7 @@
   display: block;
 } 
 
-.Lista-footer-home{
+.Lista-footer-home, .Lista-main-home{
   list-style: none;
 }
 .Lista-footer-home li{
