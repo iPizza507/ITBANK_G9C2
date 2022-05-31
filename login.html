@@ -13,7 +13,7 @@
 <body>
     <section>
         <img src="./imagen/logo.jpg" alt="logo" class="img-header m-5">
-        <form class="formulario" action="/home.html">
+        <form class="formulario" action="#">
             <h1 class="title-form">Iniciar sesión</h1>
             <div class="container">
                 <div class="container">
@@ -22,7 +22,7 @@
                         <path
                             d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.314l6.709 3.932L8 8.928l1.291.718L16 5.714V5.4a2 2 0 0 0-1.059-1.765l-6-3.2ZM16 6.873l-5.693 3.337L16 13.372v-6.5Zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516ZM0 13.373l5.693-3.163L0 6.873v6.5Z" />
                     </svg>
-                    <input type="text" class="input-form" placeholder="Correo Electronico">
+                    <input type="email" class="input-form" placeholder="Correo Electronico" id="email">
                 </div>
 
                 <div class="container">
@@ -31,11 +31,11 @@
                         <path
                             d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                     </svg>
-                    <input type="password" class="input-form" placeholder="Contraseña">
+                    <input type="password" class="input-form" placeholder="Contraseña" id="contrasenia">
                 </div>
 
-                <input type="submit" value="Iniciar sesión" class="button">
-                <p class="text-center">
+                <input type="submit" value="Iniciar sesión" class="button" onclick="validacionForm()">
+                <p class=" text-center">
                     Al registrarte, aceptas nuestras <b>Condiciones de uso </b> y <b>Política deprivacidad</b>.
                 </p>
                 <p class="text-center">
@@ -86,6 +86,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+    <script src="Js/login.js"></script>
 </body>
 
 </html>
