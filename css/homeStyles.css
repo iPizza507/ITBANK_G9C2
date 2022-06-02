@@ -16,6 +16,8 @@
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
     color: #f1f1f1;
+    text-decoration: underline white;
+    text-decoration: underline white; 
   }
   
   /* Style page content */
@@ -53,7 +55,37 @@
   text-decoration: underline;
   text-decoration-color: grey;
 }
+.imgDelaCarta{
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 200px;
+}
+.imgDelaCarta1{
+  background-image: url("/imagen/mastercard_internacional_front.png");
+}
 
+.imgDelaCarta2{
+  background-image: url("/imagen/Visa-Espana.png");
+}
+.imgDelaCarta3{
+  background-image: url("/imagen/Visa-Espana.png");
+  
+}
+.imgDelaCarta1 h5, .imgDelaCarta1 p {
+  color: white;
+}
+.imgDelaCarta2 h5, .imgDelaCarta2 p , .imgDelaCarta3 h5, .imgDelaCarta3 p {
+  color: black;
+}
+.cardMasterCard{
+  border: none !important;
+}
+.subrayado{
+  color: white !important;
+  text-decoration: underline white !important;
+  text-decoration: underline white !important;           
+}
 @media (max-width:600px){ 
   .card{
     width: 100%;

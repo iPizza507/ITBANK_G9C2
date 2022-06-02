@@ -19,6 +19,7 @@ function validacionForm() {
   let name = nombre.value;
   localStorage.setItem("name", name);
 }
+
 function cargarDatos() {
   let obtenerName = localStorage.getItem("name");
   let bienvenidoText = document.getElementById("bienvenido");
