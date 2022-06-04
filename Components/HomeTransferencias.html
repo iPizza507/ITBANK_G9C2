@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ITBANK</title>
-    <link href="/css/Transferencias.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/homeStyles.css">
+    <link rel="stylesheet" href="/css/Transferencias.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
@@ -58,98 +59,95 @@
             </div>
         </div>
         <div class="col">
-        <div class="p-0 row container d-flex justify-content-center align-self-start">
-            <div class="row">
-                <div class="col">
-                    <div class="card m-2 align-self-start cardMasterCard">
-                        <div
-                            class="titulo card-body d-flex row align-items-center align-self-center justify-content-between">
-                            <div class="p-0 ">
+            <div class="p-0 row container d-flex justify-content-center align-self-start">
+                <div class="row">
+                    <div class="col">
+                        <div class="p-3 mx-auto text-center">
+                            <div class="card mb-4 rounded-3 shadow-sm">
                                 <div class="card-header py-3">
-                                    <h4 class="my-0 fw-normal">Transferir</h4>
+                                    <h4 class="my-0 fw-normal">TRANSFERIR</h4>
                                 </div>
-                                <h4>Contactos</h4>
-                                <div class="d-flex">
-                                    <img src="/imagen/logo-header.jpeg" class="imagen-contacto" alt="">
-                                    <p>Candelaria</p>
+                                <div class="card-body">
+                                    <h1 class="card-title inversiones-card-title">
+                                        <small class="text-muted fw-light">Contactos</small>
+                                    </h1>
+                                    <input type="text" id="contactoInput" placeholder="Agregar contacto">
+                                    <button type="button" class="boton" onclick="agregarContacto()">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                            <path fill-rule="evenodd"
+                                                d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                                        </svg>
+                                    </button>
+                                    <div class="d-flex mt-3">
+                                        <ul id="listaContato">
+
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="d-flex">
-                                    <img src="/imagen/logo-header.jpeg" class="imagen-contacto" alt="">
-                                    <p>Ian</p>
-                                </div>
-                                <div class="d-flex">
-                                    <img src="/imagen/logo-header.jpeg" class="imagen-contacto" alt="">
-                                    <p>Lisandro</p>
-                                </div>
-                                <div class="d-flex">
-                                    <img src="/imagen/logo-header.jpeg" class="imagen-contacto" alt="">
-                                    <p>Pablo</p>
-                                </div>
-                                <div class="d-flex">
-                                    <img src="/imagen/logo-header.jpeg" class="imagen-contacto" alt="">
-                                    <p>Javier</p>
-                                </div>
-                                <input class="btn btn-primary" type="button" value="Agregar">
                             </div>
                         </div>
-                    </div>   
-                </div>
-                <div class="col-8">
-                    <div class="card m-2 align-self-start cardMasterCard">
-                        <div
-                            class="titulo card-body d-flex row align-items-center align-self-center justify-content-between">
-                            <div class="p-0 ">
+                    </div>
+                    <div class="col-8">
+                        <div class="p-3 mx-auto text-center">
+                            <div class="card mb-4 rounded-3 shadow-sm">
                                 <div class="card-header py-3">
-                                    <h4 class="my-0 fw-normal">Nueva transferencia</h4>
+                                    <h4 class="my-0 fw-normal">NUEVA TRANSFERENCIA</h4>
                                 </div>
-                                <h4>Nueva cuenta...</h4>
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                    <span class="input-group-text" id="basic-addon2">Cvu/Cbu/Alias</span>
+                                <div class="card-body">
+                                    <h1 class="card-title inversiones-card-title">
+                                        <small class="text-muted fw-light">Nueva cuenta..</small>
+                                    </h1>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Recipient's username"
+                                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <span class="input-group-text" id="basic-addon2">Cvu/Cbu/Alias</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input class="btn btn-primary m-2" type="submit" value="Enviar">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Añadir a contactos
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="d-flex align-items-center">
-                                    <input class="btn btn-primary m-2" type="submit" value="Enviar">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Añadir a contactos
-                                        </label>
-                                    </div>    
-                                </div>
-                                
                             </div>
                         </div>
-                    </div>   
-                </div>
-                
-            </div>
-            <div>
-                <div class="card m-2 align-self-start cardMasterCard">
-                    <div
-                        class="titulo card-body d-flex row align-items-center align-self-center justify-content-between">
-                        <div class="p-0 ">
-                            <div class="card-header py-3 d-flex">
-                                <h4 class="my-0 fw-normal m-5">Comprobantes</h4>
-                                <a href="#" onclick="mostrar()">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
-                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
-                                    </svg>
-                                </a>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 mx-auto text-center">
+                            <div class="card mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal">COMPROBANTES <a href="#" onclick="mostrar()">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+                                            </svg>
+                                        </a></h4>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title inversiones-card-title">
+                                        <small class="text-muted fw-light">Comprobantes..</small>
+                                    </h1>
+                                    <ul id="listasComprobantes">
+                                        <li>Comprobante 1</li>
+                                        <li>Comprobante 2</li>
+                                        <li>Comprobante 3</li>
+                                        <li>...</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <ul id="listasComprobantes">
-                                <li>Comprobante 1</li>
-                                <li>Comprobante 2</li>
-                                <li>Comprobante 3</li>
-                                <li>Comprobante 4</li>
-                                <li>Comprobante 5</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </div>
-    </div>
         <div class="col-2">
             <ul class="Lista-main-home">
                 <li>Accesos directos</li>
@@ -267,9 +265,9 @@
                     </a>
                 </li>
             </ul>
-        </div>    
-        
-        
+        </div>
+
+
     </div>
 
     <footer class="d-flex align-items-center fixed-bottom">
