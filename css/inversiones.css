@@ -1,0 +1,11 @@
+
+.Lista-footer-home, .Lista-main-home{
+list-style: none;
+}
+.Lista-footer-home li{
+display: inline;
+}
+.Lista-footer-home li a{
+text-decoration: none;
+color: black;
+}
