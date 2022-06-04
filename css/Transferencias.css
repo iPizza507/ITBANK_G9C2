@@ -1,0 +1,85 @@
+/* The sidebar menu */
+.sidenav {
+    height: 1000px; /* Full-height: remove this if you want "auto" height */
+    background-color: #111; /* Black */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+    text-decoration: underline white;
+    text-decoration: underline white; 
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+   
+#sideTitle{
+  color: white;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+} 
+
+.Lista-footer-home, .Lista-main-home{
+  list-style: none;
+}
+.Lista-footer-home li{
+  display: inline;
+}
+.Lista-footer-home li a{
+  text-decoration: none;
+  color: black;
+}
+
+.Lista-footer-home li a:hover{
+  text-decoration: underline;
+  text-decoration-color: grey;
+}
+
+.titulo{
+    block-size: auto;
+    width: 350px;
+}
+.card-title{
+    font-size: 30px;
+    text-align: center;
+}
+
+.imagen-contacto{
+  width: 25px;
+  border-radius: 50%;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.subrayado{
+  color: white !important;
+  text-decoration: underline white !important;
+  text-decoration: underline white !important;           
+}
+@media (max-width:600px){ 
+  .card{
+    width: 100%;
+    border-radius: 0px;
+  } 
+}

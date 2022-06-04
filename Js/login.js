@@ -13,7 +13,7 @@ function validacionForm() {
     alert("Tiene que tener un minimo de 6 caracteres");
   } else {
     //cambia la ventana
-    window.open("/home.html");
+    window.open("../Components/HomeCuentas.html");
   }
 
   let name = nombre.value;
