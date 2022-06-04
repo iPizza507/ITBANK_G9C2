@@ -99,7 +99,7 @@
   margin: auto;
   text-align: center;
   font-family: arial;
-  padding: 20px;
+  
 }
 
 .price {
@@ -124,7 +124,8 @@
 }
 
 
-#pesosArg{
+#cuentas{
 
+  padding: 20px;
   
 }
