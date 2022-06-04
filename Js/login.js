@@ -1,3 +1,4 @@
+console.log("entro al js");
 //busco el input
 let email = document.getElementById("email");
 let contrasenia = document.getElementById("contrasenia");
