@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ITBANK</title>
+    <link href="../css/Servicios.css" rel="stylesheet">
+    <link href="../css/homeStyles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body onload="cargarDatos()">
+    <header>
+        <nav class="navbar navbar-expand-lg nav-hover d-flex justify-content-between">
+            <div>
+                <img src="../imagen/logo-header.jpeg" alt="logo" class="img-footer" width="50" height="50">
+            </div>
+            <div>
+                <a class="navbar-brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-gear-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                    </svg>
+                </a>
+                <a class="navbar-brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                    </svg>
+                </a>
+                <a class="navbar-brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-power" viewBox="0 0 16 16">
+                        <path d="M7.5 1v7h1V1h-1z" />
+                        <path
+                            d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="row main">
+        <div class="col-2">
+            <div class="sidenav">
+                <h1 id="sideTitle">ITBANK</h1>
+                <a href="./HomeCuentas.html">Cuentas</a>
+                <a href="./HomeTarjetas.html">Tarjetas</a>
+                <a href="./HomeTransferencias.html">Transferencias</a>
+                <a href="./HomeInversiones.html">Inversiones</a>
+                <a href="./HomeServicios.html" class="subrayado">Pago de Servicios</a>
+                <a href="/index.html">Cerrar Sesion</a>
+            </div>
+        </div>
+        <!-- Aca arranco a codear -->
+        <div class="col-8"> <!--Tamaño de la columna donde codeo-->
+            <div>
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <button type="button" class="btn btn-dark brn-lg">Nuevo Pago</button>
+                    <button type="button" class="btn btn-secondary">Recargas</button>
+                  
+                    <div class="btn-group" role="group">
+                      <button id="btnGroupDrop1" type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Mas opciones
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item" href="#">Añadir servicio</a>
+                        <a class="dropdown-item" href="#">Mis servicios añadidos</a>
+                        <a class="dropdown-item"  href="https://auth.afip.gob.ar/">Servicios AFIP</a>
+                        <a class="dropdown-item" href="https://paysrv2.pagomiscuentas.com/">Acceso a Pago Mis Cuentas</a>
+                       
+                      </div>
+                    </div>
+                  </div> <br><br>
+
+            </div>
+                <div class="row"> <!--copypaste del bootstrap-->
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xlg-3">
+                    <div class="card">
+                        <div class="card-body">
+                        <h3 class="nombre-servicio">Fibertel AYSA etc</h3>
+                        <h6 class="aclaracion-servicio">Casa</h6>
+                        <p class="detalles-servicio">Monto: $6534,92 <br> Vencimiento: 10/06/2022</p>
+
+    <!-- Example split danger button -->
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-danger">PAGAR</button>
+                            <button type="button" class="btn btn-Primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Opciones</span>
+                            </button>
+                            <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Ver detalles</a>
+                            <a class="dropdown-item" href="#">Editar Servicio</a>
+                            <a class="dropdown-item" href="#">Adherir a debito automático</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Eliminar servicio</a>
+                            </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>            <!--fin primer servicio-->
+
+
+
+
+
+
+
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xlg-3">
+                        <div class="card">
+                        <div class="card-body">
+                            <h3 class="nombre-servicio">AYSA etc</h3>
+                            <h6 class="aclaracion-servicio">Casa</h6>
+                            <p class="detalles-servicio">Monto: $543,36 <br> Vencimiento: 22/06/2022</p>
+    
+    <!-- Example split danger button -->
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-danger">PAGAR</button>
+                            <button type="button" class="btn btn-Primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Opciones</span>
+                            </button>
+                            <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Ver detalles</a>
+                            <a class="dropdown-item" href="#">Editar Servicio</a>
+                            <a class="dropdown-item" href="#">Adherir a debito automático</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Eliminar servicio</a>
+                            </div>
+                            </div>
+    
+                        </div>
+                        </div>
+                    </div>            <!--fin segundo servicio-->
+
+
+
+
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xlg-3">
+                        <div class="card">
+                        <div class="card-body">
+                            <h3 class="nombre-servicio">Edenor</h3>
+                            <h6 class="aclaracion-servicio">Depto4</h6>
+                            <p class="detalles-servicio">Monto: $3434,52 <br> Vencimiento: 06/06/2022</p>
+    
+    <!-- Example split danger button -->
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-danger">PAGAR</button>
+                            <button type="button" class="btn btn-Primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Opciones</span>
+                            </button>
+                            <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Ver detalles</a>
+                            <a class="dropdown-item" href="#">Editar Servicio</a>
+                            <a class="dropdown-item" href="#">Adherir a debito automático</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Eliminar servicio</a>
+                            </div>
+                            </div>
+    
+                        </div>
+                        </div>
+                    </div>            <!--fin Tercer servicio-->
+
+
+                    
+                </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Aca termino de codear -->
+    </main>
+
+
+    <footer class="d-flex align-items-center fixed-bottom">
+        <div class="d-flex col-12 justify-content-center">
+            <ul class="Lista-footer-home">
+                <li>
+                    <a class="link" href="loginvista.html">Contactanos | </a>
+                </li>
+                <li>
+                    <a class="link" href="loginvista.html"> Privicidad |</a>
+                </li>
+                <li>
+                    <a class="link" href="loginvista.html"> En todo el mundo |</a>
+                </li>
+                <li>
+                    <a class="link" href="loginvista.html"> Acuerdo legales</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="Js/login.js"></script>
+</body>
+
+</html>
