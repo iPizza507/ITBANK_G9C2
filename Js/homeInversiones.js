@@ -1,8 +1,11 @@
+//obtener el elemento PADRE
 let div = document.getElementById("inversionesSection");
 
+//obtener los datos a partir de fetch
 fetch("https:dolarsi.com/api/api.php?type=valoresprincipales")
   .then((data) => data.json())
   .then((data) =>
+    //recorrer los datos, añadiendolos en HTML
     data.forEach((e) => {
       //div col
       let div2 = document.createElement("div");
