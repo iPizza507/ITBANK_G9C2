@@ -14,7 +14,8 @@ function validacionForm() {
     alert("Tiene que tener un minimo de 6 caracteres");
   } else {
     //cambia la ventana
-    window.open("../Components/HomeCuentas.html");
+    window.location.href = "../Components/HomeCuentas.html";
+    //window.open("../Components/HomeCuentas.html");
   }
 
   let name = nombre.value;
@@ -22,7 +23,7 @@ function validacionForm() {
 }
 
 function cargarDatos() {
-  let obtenerName = localStorage.getItem("name");
-  let bienvenidoText = document.getElementById("bienvenido");
-  bienvenidoText.innerText = "Bienvenid@ " + obtenerName + "!";
+  let getName = localStorage.getItem("name");
+  let welkomeText = document.getElementById("bienvenido");
+  welkomeText.innerText = "Bienvenid@ " + getName + "!";
 }

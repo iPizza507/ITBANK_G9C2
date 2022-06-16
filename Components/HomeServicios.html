@@ -11,7 +11,7 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
-<body onload="cargarDatos()">
+<body>
     <header>
         <nav class="navbar navbar-expand-lg nav-hover d-flex justify-content-between">
             <div>
@@ -57,136 +57,122 @@
             </div>
         </div>
         <!-- Aca arranco a codear -->
-        <div class="col-8"> <!--Tamaño de la columna donde codeo-->
+        <div class="col-8">
+            <!--Tamaño de la columna donde codeo-->
             <div>
                 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                     <button type="button" class="btn btn-dark brn-lg">Nuevo Pago</button>
                     <button type="button" class="btn btn-secondary">Recargas</button>
-                  
+
                     <div class="btn-group" role="group">
-                      <button id="btnGroupDrop1" type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Mas opciones
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                        <a class="dropdown-item" href="#">Añadir servicio</a>
-                        <a class="dropdown-item" href="#">Mis servicios añadidos</a>
-                        <a class="dropdown-item"  href="https://auth.afip.gob.ar/">Servicios AFIP</a>
-                        <a class="dropdown-item" href="https://paysrv2.pagomiscuentas.com/">Acceso a Pago Mis Cuentas</a>
-                       
-                      </div>
+                        <button id="btnGroupDrop1" type="button" class="btn btn-dark dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Mas opciones
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">Añadir servicio</a>
+                            <a class="dropdown-item" href="#">Mis servicios añadidos</a>
+                            <a class="dropdown-item" href="https://auth.afip.gob.ar/">Servicios AFIP</a>
+                            <a class="dropdown-item" href="https://paysrv2.pagomiscuentas.com/">Acceso a Pago Mis
+                                Cuentas</a>
+
+                        </div>
                     </div>
-                  </div> <br><br>
+                </div> <br><br>
 
             </div>
-                <div class="row"> <!--copypaste del bootstrap-->
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xlg-3">
+            <div class="row">
+                <!--copypaste del bootstrap-->
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xlg-3">
                     <div class="card">
                         <div class="card-body">
-                        <h3 class="nombre-servicio">Fibertel AYSA etc</h3>
-                        <h6 class="aclaracion-servicio">Casa</h6>
-                        <p class="detalles-servicio">Monto: $6534,92 <br> Vencimiento: 10/06/2022</p>
+                            <h3 class="nombre-servicio">Fibertel AYSA etc</h3>
+                            <h6 class="aclaracion-servicio">Casa</h6>
+                            <p class="detalles-servicio">Monto: $6534,92 <br> Vencimiento: 10/06/2022</p>
 
-    <!-- Example split danger button -->
+                            <!-- Example split danger button -->
                             <div class="btn-group">
-                            <button type="button" class="btn btn-primary">PAGAR</button>
-                            <button type="button" class="btn btn-Primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="sr-only">Opciones</span>
-                            </button>
-                            <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Ver detalles</a>
-                            <a class="dropdown-item" href="#">Editar Servicio</a>
-                            <a class="dropdown-item" href="#">Adherir a debito automático</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Eliminar servicio</a>
-                            </div>
+                                <button type="button" class="btn btn-primary">PAGAR</button>
+                                <button type="button" class="btn btn-Primary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Opciones</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Ver detalles</a>
+                                    <a class="dropdown-item" href="#">Editar Servicio</a>
+                                    <a class="dropdown-item" href="#">Adherir a debito automático</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Eliminar servicio</a>
+                                </div>
                             </div>
 
                         </div>
                     </div>
-                    </div>            <!--fin primer servicio-->
+                </div>
+                <!--fin primer servicio-->
 
 
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xlg-3">
-                        <div class="card">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xlg-3">
+                    <div class="card">
                         <div class="card-body">
                             <h3 class="nombre-servicio">AYSA etc</h3>
                             <h6 class="aclaracion-servicio">Casa</h6>
                             <p class="detalles-servicio">Monto: $543,36 <br> Vencimiento: 22/06/2022</p>
-    
-    <!-- Example split danger button -->
+
+                            <!-- Example split danger button -->
                             <div class="btn-group">
-                            <button type="button" class="btn btn-primary">PAGAR</button>
-                            <button type="button" class="btn btn-Primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="sr-only">Opciones</span>
-                            </button>
-                            <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Ver detalles</a>
-                            <a class="dropdown-item" href="#">Editar Servicio</a>
-                            <a class="dropdown-item" href="#">Adherir a debito automático</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Eliminar servicio</a>
+                                <button type="button" class="btn btn-primary">PAGAR</button>
+                                <button type="button" class="btn btn-Primary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Opciones</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Ver detalles</a>
+                                    <a class="dropdown-item" href="#">Editar Servicio</a>
+                                    <a class="dropdown-item" href="#">Adherir a debito automático</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Eliminar servicio</a>
+                                </div>
                             </div>
-                            </div>
-    
+
                         </div>
-                        </div>
-                    </div>            <!--fin segundo servicio-->
+                    </div>
+                </div>
+                <!--fin segundo servicio-->
 
 
 
 
-                    
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xlg-3">
-                        <div class="card">
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xlg-3">
+                    <div class="card">
                         <div class="card-body">
                             <h3 class="nombre-servicio">Edenor</h3>
                             <h6 class="aclaracion-servicio">Depto4</h6>
                             <p class="detalles-servicio">Monto: $3434,52 <br> Vencimiento: 06/06/2022</p>
-    
-    <!-- Example split danger button -->
+
+                            <!-- Example split danger button -->
                             <div class="btn-group">
-                            <button type="button" class="btn btn-primary">PAGAR</button>
-                            <button type="button" class="btn btn-Primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="sr-only">Opciones</span>
-                            </button>
-                            <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Ver detalles</a>
-                            <a class="dropdown-item" href="#">Editar Servicio</a>
-                            <a class="dropdown-item" href="#">Adherir a debito automático</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Eliminar servicio</a>
+                                <button type="button" class="btn btn-primary">PAGAR</button>
+                                <button type="button" class="btn btn-Primary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Opciones</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Ver detalles</a>
+                                    <a class="dropdown-item" href="#">Editar Servicio</a>
+                                    <a class="dropdown-item" href="#">Adherir a debito automático</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Eliminar servicio</a>
+                                </div>
                             </div>
-                            </div>
-    
-                        </div>
-                        </div>
-                    </div>            <!--fin Tercer servicio-->
 
-
-                    
+                        </div>
+                    </div>
                 </div>
+                <!--fin Tercer servicio-->
+            </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- Aca termino de codear -->
     </main>
 
@@ -209,10 +195,15 @@
             </ul>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="Js/login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
