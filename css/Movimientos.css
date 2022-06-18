@@ -132,4 +132,14 @@
 #saldo{
 
     background-color: cadetblue !important;
+
+  margin: auto;
+  width: 100%S;
+
+
+}
+
+#tablaMoviemientos{
+
+  margin: 100%;
 }
