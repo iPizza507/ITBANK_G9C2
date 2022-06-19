@@ -9,6 +9,9 @@ body{
 header, footer{
     background-color:   #F7F7F7;
 }
+.nav-hover{
+    margin: 0px 40px 0 40px;
+}
 .nav-hover a:hover{
     text-decoration: underline;
     text-decoration-color: grey;
@@ -36,6 +39,28 @@ header, footer{
 .footer-index{
     height: 200px;
 }
+/*----------------------------------------- Codigo de Index Quienes Somos ------------------------------------*/
+.section-indexQuienesSomos{
+    background-color: rgb(192, 192, 192);
+}
+.img-Index-QuienesSomos{
+    margin-left: 200px;
+}
+.img-Index-QuienesSomos img{
+    border-radius: 5px;
+}
+.align-text-left{
+    text-align: left;
+}
+.title-index-QuienesSomos{
+    font-size: 52px;
+}
+.subtitle-index-QuienesSomos{
+    color: #F7F7F7;
+    font-size: 25px;
+}
+
+/*----------------------------------------- Media Querys  ------------------------------------*/
 
 @media all and (min-width: 600px) and (max-width: 1023px) {
     .section-title{
