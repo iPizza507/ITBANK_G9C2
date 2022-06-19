@@ -1,9 +1,8 @@
 /* The sidebar menu */
 .sidenav {
-    height: 1000px; /* Full-height: remove this if you want "auto" height */
+    height: 900px; /* Full-height: remove this if you want "auto" height */
     background-color: #111; /* Black */
   }
-  
   /* The navigation menu links */
   .sidenav a {
     padding: 6px 8px 6px 16px;
@@ -12,26 +11,27 @@
     color: #818181;
     display: block;
   }
-  
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
     color: #f1f1f1;
     text-decoration: underline white;
     text-decoration: underline white; 
   }
-  
   /* Style page content */
   .main {
     margin-left: 200px; /* Same as the width of the sidebar */
     padding: 0px 10px;
   }
-  
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
   }
-   
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
 #sideTitle{
   color: white;
   padding: 6px 8px 6px 16px;
@@ -59,10 +59,13 @@
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
-  height: 200px;
+  height: 190px;
 }
+
 .imgDelaCarta1{
-  background-image: url("/imagen/mastercard_internacional_front.png");
+  background-image: url("/imagen/BBVA.png");
+  border-radius: 10px !important;
+
 }
 
 .imgDelaCarta2, .imgDelaCarta3{
@@ -75,10 +78,13 @@
 .imgDelaCarta2 h5, .imgDelaCarta2 p , .imgDelaCarta3 h5, .imgDelaCarta3 p {
   color: black;
 }
-.cardMasterCard{
-  border: none !important;
-  background-color: transparent;
-  border-radius: 5px;
+.cardTarjetas2{
+  box-shadow: none !important;
+}
+.cardTarjetas{
+  border-style: none !important; 
+  box-shadow: none !important;
+  
 }
 .subrayado{
   color: white !important;
