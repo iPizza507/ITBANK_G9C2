@@ -39,7 +39,12 @@
   font-size: 25px;
   display: block;
 } 
-
+.subrayado{
+  color: white !important;
+  text-decoration: underline white !important;
+  text-decoration: underline white !important;           
+}
+/*----------------------------------------- Codigo de Home ------------------------------------*/
 .Lista-footer-home, .Lista-main-home{
   list-style: none;
 }
@@ -55,6 +60,48 @@
   text-decoration: underline;
   text-decoration-color: grey;
 }
+/*----------------------------------------- Codigo de Home Cuentas ------------------------------------*/
+.price {
+  color: grey;
+  font-size: 22px;
+}
+.card-Button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card-Button:hover {
+  opacity: 0.7;
+}
+#cuentas{
+  padding: 20px;
+}
+/*----------------------------------------- Codigo de Home Inversiones ------------------------------------*/
+
+/*----------------------------------------- Codigo de Home Servicios ------------------------------------*/
+.nombre-servicio{
+  color:black;
+  vertical-align: auto;
+}
+
+.aclaracion-servicio{
+  color: grey;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.detalles-servicio{
+  color: black;
+  font-weight: bolder;
+  text-align: left;
+}
+/*----------------------------------------- Codigo de Home Tarjetas ------------------------------------*/
 .imgDelaCarta{
   background-repeat: no-repeat;
   background-size: contain;
@@ -84,19 +131,25 @@
 .cardTarjetas{
   border-style: none !important; 
   box-shadow: none !important;
-  
+} 
+/*----------------------------------------- Codigo de Home Tarjetas-Movimientos ------------------------------------*/
+
+/*----------------------------------------- Codigo de Home Transferencias ------------------------------------*/
+.card-title{
+  font-size: 30px;
 }
-.subrayado{
-  color: white !important;
-  text-decoration: underline white !important;
-  text-decoration: underline white !important;           
+.imagen-contacto{
+width: 25px;
+border-radius: 50%;
+height: 25px;
+margin-right: 10px;
 }
-@media (max-width:600px){ 
-  .card{
-    width: 100%;
-    border-radius: 0px;
-  } 
+#listaContato, #listasComprobantes{
+list-style-type: none;
+margin: 0;
+padding: 0;
 }
+/*--- Codigo de boostrap NO SE TOCA MAS ------------*/
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -105,41 +158,18 @@
   text-align: center;
   font-family: arial;
 }
-.price {
-  color: grey;
-  font-size: 22px;
-}
 
-.card-Button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.card-Button:hover {
-  opacity: 0.7;
-}
-
-
-#cuentas{
-
-  padding: 20px;
-  
-}
-
-
+/*----------------------------------------- Codigo de Home ------------------------------------*/
 #saldo{
-
   background-color: #1a2537 !important;
+  margin: auto;
+  width: 100%S;
+}
 
-margin: auto;
-width: 100%S;
-
-
+/*----------------------------------------- Media Querys.. ------------------------------------*/
+@media (max-width:600px){ 
+  .card{
+    width: 100%;
+    border-radius: 0px;
+  } 
 }
