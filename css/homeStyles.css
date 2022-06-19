@@ -117,6 +117,7 @@
 
 .imgDelaCarta2, .imgDelaCarta3{
   background-image: url("/imagen/Visa-Espana.png");
+  
 }
 
 .imgDelaCarta1 h5, .imgDelaCarta1 p {
@@ -136,7 +137,7 @@
 
 /*----------------------------------------- Codigo de Home Transferencias ------------------------------------*/
 .card-title{
-  font-size: 30px;
+  font-size: 21px;
 }
 .imagen-contacto{
 width: 25px;
