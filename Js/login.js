@@ -19,7 +19,7 @@ function validacionForm() {
     localStorage.setItem("name", name);
     alert("Load..");
     setTimeout(function () {
-      location.href = "../Components/HomeCuentas.html";
+      location.href = "/Components/Home/HomeCuentas.html";
     }, 100);
   }
 }
