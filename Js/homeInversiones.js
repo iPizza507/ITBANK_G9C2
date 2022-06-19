@@ -7,6 +7,8 @@ fetch("https:dolarsi.com/api/api.php?type=valoresprincipales")
   .then((data) =>
     //recorrer los datos, añadiendolos en HTML
     data.forEach((e) => {
+      //para ver lo que trae el fetch..
+      console.log(e);
       //div col
       let div2 = document.createElement("div");
       div2.setAttribute("class", "col");
@@ -33,9 +35,13 @@ fetch("https:dolarsi.com/api/api.php?type=valoresprincipales")
       div4.appendChild(div5A);
       div5A.setAttribute("class", "card-body");
       //titulo del h1
-      let h1 = document.createElement("h3");
-      h1.innerText = `Compra: $${e.casa.compra} - Venta: $${e.casa.venta}`;
+      let h1 = document.createElement("h4");
+      h1.innerText = `Compra: $${e.casa.compra}`;
       div5A.appendChild(h1);
+      //titulo del h1
+      let h1B = document.createElement("h4");
+      h1B.innerText = `Venta: $${e.casa.venta}`;
+      div5A.appendChild(h1B);
       //Button
       let butt = document.createElement("button");
       butt.setAttribute("class", "w-100 btn btn-lg btn-primary");

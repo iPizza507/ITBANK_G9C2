@@ -78,6 +78,7 @@
 }
 .card-Button:hover {
   opacity: 0.7;
+  color: white;
 }
 #cuentas{
   padding: 20px;
