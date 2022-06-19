@@ -39,7 +39,7 @@ fetch("https:dolarsi.com/api/api.php?type=valoresprincipales")
       //Button
       let butt = document.createElement("button");
       butt.setAttribute("class", "w-100 btn btn-lg btn-primary");
-      butt.setAttribute("onClick", edsad);
+      butt.setAttribute("onClick", "edsad()");
       butt.innerText = `Invertir`;
       div5A.appendChild(butt);
       //leyenda button
@@ -51,5 +51,5 @@ fetch("https:dolarsi.com/api/api.php?type=valoresprincipales")
   );
 
 const edsad = () => {
-  console.log("dasd");
+  console.log("asd");
 };

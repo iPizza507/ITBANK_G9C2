@@ -65,13 +65,10 @@
   background-image: url("/imagen/mastercard_internacional_front.png");
 }
 
-.imgDelaCarta2{
+.imgDelaCarta2, .imgDelaCarta3{
   background-image: url("/imagen/Visa-Espana.png");
 }
-.imgDelaCarta3{
-  background-image: url("/imagen/Visa-Espana.png");
-  
-}
+
 .imgDelaCarta1 h5, .imgDelaCarta1 p {
   color: white;
 }
@@ -80,6 +77,8 @@
 }
 .cardMasterCard{
   border: none !important;
+  background-color: transparent;
+  border-radius: 5px;
 }
 .subrayado{
   color: white !important;
