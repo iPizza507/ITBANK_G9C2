@@ -36,7 +36,13 @@ header, footer{
 .footer-index{
     height: 200px;
 }
-
+.about-model_content-right{
+    width: 500px;
+    height: 200px;
+    position: relative;
+    left: 900px;
+    top: -170px;
+}
 @media all and (min-width: 600px) and (max-width: 1023px) {
     .section-title{
         height: 500px;
@@ -44,6 +50,7 @@ header, footer{
     .footer-index{
         height: 120px;
     }   
+
 }
 
 @media all and (max-width: 599px) {
