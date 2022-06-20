@@ -48,6 +48,9 @@ header, footer{
 }
 .img-Index-QuienesSomos img{
     border-radius: 5px;
+    width: 400px;
+    height: 300px;
+    margin-top: 50px;
 }
 .align-text-left{
     text-align: left;
