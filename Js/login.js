@@ -16,10 +16,10 @@ function validacionForm() {
     alert("El nombre debe tener un minimo de 4 caracteres");
   } else {
     //cambia la ventana
+    console.log("Correcto..");
     localStorage.setItem("name", name);
-    alert("Load..");
     setTimeout(function () {
-      location.href = "/Components/Home/HomeCuentas.html";
-    }, 100);
+      window.location.href = "/Components/Home/HomeCuentas.html";
+    }, 1000);
   }
 }
