@@ -44,6 +44,12 @@
   text-decoration: underline white !important;
   text-decoration: underline white !important;           
 }
+.icon-AccesoDirecto{
+
+  border:none;
+  background-color: white;
+  padding: 5px;
+}
 /*----------------------------------------- Codigo de Home ------------------------------------*/
 .Lista-footer-home, .Lista-main-home{
   list-style: none;
