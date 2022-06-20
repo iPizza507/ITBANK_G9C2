@@ -107,30 +107,19 @@ header, footer{
     .subtitle-index-QuienesSomos{
         font-size: 15px;
     }
+
     /* SERVICIOS*/
-    .title-index-servicios{
-        font-size: 45px;
-    }
     .caja-index-servicios{
-        background-color: white;
-        height: 300px;
-        border-radius: 10px;
-        margin: 0px 40px;
-        padding: 20px;
+        margin: 0px 20px;
     }
     .textoTitulo-caja-index-servicios{
-        font-size: 25px;
-        font-style: bold;
+        font-size: 20px;
     }
-    
+    .subtextoTitulo-caja-index-servicios{
+        font-size: 10px;
+    }
     .caja-index-servicios button{
-        background-color: rgb(0, 0, 0);
-        color: white;
-        
-    }
-    .caja-index-servicios button:hover{
-        background-color: rgb(255, 255, 255);
-        color: black;
+        font-size: 10px;
     }
 }
 
