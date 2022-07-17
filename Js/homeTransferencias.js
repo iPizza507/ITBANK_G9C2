@@ -40,23 +40,18 @@ const agregarContacto = function () {
   lista.appendChild(nuevaTarea);
   contactoInput.value = "";
 
-  for (let i = 0; i <= lista.children.length - 1; i++) {
-    lista.children[i].addEventListener("click", function () {
-      this.parentNode.removeChild(this);
-    });
-  }
-
   let comprobarInput = function () {
     contactoInput.className = "";
     contactoInput.setAttribute("placeholder", "Agregar contacto");
   };
-  let eliminarTarea = function () {
-    this.parentNode.removeChild(this);
-  };
-
   contactoInput.addEventListener("click", comprobarInput);
 
-  for (let i = 0; i < lista.length - 1; i++) {
-    lista.children[i].addEventListener("click", eliminarTarea);
+  // ELIMINAR ELEMENTO
+  for (let i = 0; i <= lista.children.length - 1; i++) {
+    console.log(lista.children[i]);
+    lista.children[i].addEventListener("click", function () {
+      console.log(lista.children[i]);
+      this.parentNode.removeChild(this);
+    });
   }
 };

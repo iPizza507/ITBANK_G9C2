@@ -51,12 +51,10 @@ if __name__ == '__main__':
         archivoNuevo = open(
             f"{posicion_dni}{str(datetime.datetime.now()).replace(':','_')}.csv", "x")
 
-        '''
-        for item in datos:
-            newitem = item(filter(
-                lambda registro: registro[posicion_dni] == sys.argv[POSICION_ARGUMENTO_DNI], datos[1:]))
-            print(newitem)
-        '''
+        newitem = datos(filter(
+            lambda registro: registro[posicion_dni] == sys.argv[POSICION_ARGUMENTO_DNI], datos[1:]))
+        print(newitem)
+
         print(type(datos))
         archivoNuevo.write(str(datos))
         archivoNuevo.close()
