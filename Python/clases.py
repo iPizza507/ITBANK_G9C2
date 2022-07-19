@@ -1,7 +1,8 @@
 from asyncio.windows_events import INFINITE
+from cliente import Cliente
 
 
-class Classic:
+class Classic(Cliente):
     def __init__(self):
         puede_crear_chequera = False
         puede_crear_tarjeta_credito = False
@@ -12,7 +13,7 @@ class Classic:
         transferencia_maxima = 150000
 
 
-class Gold:
+class Gold(Cliente):
     def __init__(self):
         puede_crear_chequera = True
         cantidad_max_chequera = 1
@@ -25,7 +26,7 @@ class Gold:
         transferencia_maxima = 150000
 
 
-class Black:
+class Black(Cliente):
     def __init__(self):
         puede_crear_chequera = True
         cantidad_max_chequera = 2
