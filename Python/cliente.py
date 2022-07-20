@@ -25,7 +25,7 @@ class Cliente:
         # GOLd ---> gold
         self.tipo = self.tipo.lower()
         if self.tipo == "gold":
-            return "Gold()"
+            return Gold()
         if self.tipo == "black":
             return "Black()"
         if self.tipo == "classic":
