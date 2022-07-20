@@ -1,52 +1,37 @@
 # importar la direccion
+from asyncio.windows_events import INFINITE
 from direccion import Direccion
-from cuenta import Cuenta
 # importar la razon
-
-# importar los 3 tipos de clientes
-from clases import Black
-from clases import Gold
-from clases import Classic
 
 
 class Cliente:
-    def __init__(self, nombre: str, apellido: str, dni: str):
+    def __init__(self, nombre: str, apellido: str, dni: str, direccion=[]):
         self.nombre = nombre
         self.apellido = apellido
         self.dni = dni
-        self.direccion = Direccion()
+        self.direccion = direccion
         self.razon = "razon"
-        self.cuenta = Cuenta()
+        self.tipo = ""
 
     def mostrarNombre(self):
         return print(self.nombre, self.apellido)
 
-    def get_PuedeCrearChequera(self):
-        return self.puede_crear_chequera
+    def mostrar(self):
+        # al atributo peliculas se le agrega una pelicula
+        for d in self.direccion:
+            print(d)
 
-    def get_CantidadMaxChequera(self):
-        return self.cantidad_max_chequera
-
-    def get_PuedeCrearTarjetaCredito(self):
-        return self.puede_crear_tarjeta_credito
-
-    def get_CantidadMaxTarjetaCredito(self):
-        return self.cantidad_max_tarjeta_credito
-
-    def get_PuedeComprarDolar(self):
-        return self.puede_comprar_dolar
-
-    def get_CuentaCorrienteNegativo(self):
-        return self.cuenta_corriente_negativo
-
-    def get_RetiroMaximo(self):
-        return self.retiro_maximo
-
-    def get_Comision(self):
-        return self.comision
-
-    def get_TransferenciaMaxima(self):
-        return self.transferencia_maxima
+    def tipo(self, tipo):
+        # GOLd ---> gold
+        tipo = tipo.lower()
+        if tipo == "gold":
+            return Gold()
+        if tipo == "black":
+            return Black()
+        if tipo == "classic":
+            return Classic()
+        if tipo == "":
+            return "default"
 
 
 class Classic(Cliente):
@@ -55,9 +40,9 @@ class Classic(Cliente):
         puede_crear_tarjeta_credito = False
         puede_comprar_dolar = False
         cuenta_corriente_negativo = False
-        retiro_maximo = 10000
+        limite_de_extraccion = 10000
         comision = [1, "%"]
-        transferencia_maxima = 150000
+        limite_de_transferencia_recibida = 150000
 
 
 class Gold(Cliente):
@@ -68,9 +53,9 @@ class Gold(Cliente):
         cantidad_max_tarjeta_credito = 1
         puede_comprar_dolar = True
         cuenta_corriente_negativo = -10000
-        retiro_maximo = 20000
+        limite_de_extraccion = 20000
         comision = [0.5, "%"]
-        transferencia_maxima = 150000
+        limite_de_transferencia_recibida = 150000
 
 
 class Black(Cliente):
@@ -81,6 +66,13 @@ class Black(Cliente):
         cantidad_max_tarjeta_credito = 5
         puede_comprar_dolar = True
         cuenta_corriente_negativo = -10000
-        retiro_maximo = 100000
+        limite_de_extraccion = 100000
         comision = [0, "%"]
-        transferencia_maxima = INFINITE
+        limite_de_transferencia_recibida = INFINITE
+
+
+dir1 = Direccion("pampa", "457", "CABA", "Bs As", "Argentina")
+Alejo = Cliente("Alejo", "Suarez", "45865442", [dir1])
+
+Alejo.mostrar()
+Alejo.mostrarNombre()
