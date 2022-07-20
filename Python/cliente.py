@@ -5,32 +5,32 @@ from direccion import Direccion
 
 
 class Cliente:
-    def __init__(self, nombre: str, apellido: str, dni: str, direccion=[]):
+    def __init__(self, nombre: str, apellido: str, dni: str, tipo="", direccion=[]):
         self.nombre = nombre
         self.apellido = apellido
         self.dni = dni
+        self.tipo = tipo.upper()
         self.direccion = direccion
         self.razon = "razon"
-        self.tipo = ""
 
     def mostrarNombre(self):
-        return print(self.nombre, self.apellido)
+        return print(self.nombre, self.apellido, self.tipo)
 
     def mostrar(self):
         # al atributo peliculas se le agrega una pelicula
         for d in self.direccion:
             print(d)
 
-    def tipo(self, tipo):
+    def tipo(self):
         # GOLd ---> gold
-        tipo = tipo.lower()
-        if tipo == "gold":
-            return Gold()
-        if tipo == "black":
-            return Black()
-        if tipo == "classic":
-            return Classic()
-        if tipo == "":
+        self.tipo = self.tipo.lower()
+        if self.tipo == "gold":
+            return "Gold()"
+        if self.tipo == "black":
+            return "Black()"
+        if self.tipo == "classic":
+            return" Classic()"
+        if self.tipo == "":
             return "default"
 
 
@@ -71,8 +71,8 @@ class Black(Cliente):
         limite_de_transferencia_recibida = INFINITE
 
 
-dir1 = Direccion("pampa", "457", "CABA", "Bs As", "Argentina")
-Alejo = Cliente("Alejo", "Suarez", "45865442", [dir1])
+dir1 = Direccion("Pampa", "457", "CABA", "Bs As", "Argentina")
+Alejo = Cliente("Alejo", "Suarez", "45865442", "gold", [dir1])
 
-Alejo.mostrar()
 Alejo.mostrarNombre()
+Alejo.mostrar()
