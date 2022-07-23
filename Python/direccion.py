@@ -7,7 +7,7 @@ class Direccion:
         self.pais = pais
 
     def __str__(self):
-        return '{}, {}, {}, {}, {} '.format(self.calle, self.ciudad, self.ciudad, self.provincia, self.pais)
+        return '{} {}, {} {}, {}.'.format(self.calle, self.numero, self.ciudad, self.provincia, self.pais)
 
     def validate(self) -> bool:
         return True

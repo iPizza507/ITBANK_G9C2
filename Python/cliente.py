@@ -4,25 +4,19 @@ from direccion import Direccion
 
 
 class Cliente:
-    def __init__(self, nombre: str, apellido: str, dni: str, tipo=[], direccion=[]):
+    def __init__(self, nombre: str, apellido: str, dni: str, direccion=[]):
         self.nombre = nombre
         self.apellido = apellido
         self.dni = dni
-        self.tipo = tipo
         self.direccion = direccion
         self.razon = "razon"
 
-    def mostrarNombre(self):
-        return print(self.nombre, self.apellido)
-
-    def mostrarDirreccion(self):
+    def mostrarDatos(self):
         # al atributo peliculas se le agrega una pelicula
+        print('El nombre es: ', self.nombre,
+              self.apellido, 'con DNI: ', self.dni)
         for d in self.direccion:
-            print(d)
-
-    def mostrarTipo(self):
-        for t in self.tipo:
-            print(t)
+            print('La direccion es:', d)
 
 
 class Classic(Cliente):
@@ -35,12 +29,13 @@ class Classic(Cliente):
         self.comision = [1, "%"]
         self.limite_de_transferencia_recibida = 150000
 
-    def mostrarAtributos(self):
-        print(self.puede_crear_chequera, self.puede_crear_tarjeta_credito)
+    def __str__(self):
+        return '{}, {}'.format(self.puede_crear_chequera, self.puede_crear_tarjeta_credito)
 
 
 class Gold(Cliente):
-    def __init__(self):
+    def __init__(self, nombre, apellido, dni, direccion):
+        super().__init__(nombre, apellido, dni, direccion)
         self.puede_crear_chequera = True
         self.cantidad_max_chequera = 1
         self.puede_crear_tarjeta_credito = True
@@ -51,8 +46,8 @@ class Gold(Cliente):
         self.comision = [0.5, "%"]
         self.limite_de_transferencia_recibida = 150000
 
-    def mostrarAtributos(self):
-        print(self.puede_crear_chequera, self.puede_crear_tarjeta_credito)
+    def __str__(self):
+        return '{}, {}'.format(self.puede_crear_chequera, self.puede_crear_tarjeta_credito)
 
 
 class Black(Cliente):
@@ -68,10 +63,36 @@ class Black(Cliente):
         self.limite_de_transferencia_recibida = INFINITE
 
 
-tipo = Gold()
-dir1 = Direccion("Pampa", "457", "CABA", "Bs As", "Argentina")
-Alejo = Cliente("Alejo", "Suarez", "45865442", [tipo], [dir1])
+dir1 = Direccion("Pampa", "457", "Lanus", "CABA", "Argentina")
 
-Alejo.mostrarNombre()
-Alejo.mostrarDirreccion()
-tipo.mostrarAtributos()
+
+#Alejo = Cliente([tipo], [dir1])
+# Alejo.mostrarDatos()
+
+
+tip = input('Classic, Gold o Black? ')
+tip = tip.lower()
+
+
+def crearCliente(n):
+    if n == 'classic':
+        print('classic')
+    elif n == 'gold':
+        print('gold')
+        # llama a la funcion pedir datos
+        pedirDatos()
+    elif n == 'black':
+        print('black')
+    else:
+        print('Error! Vuelva a intentar..')
+
+
+def pedirDatos():
+    nombre = input("Cual es el nombre? ")
+    #apellido = input("Cual es el apellido? ")
+    #dni = input("Cual es el dni? ")
+    tipo = Gold(nombre, "Figueroa", "45124451", [dir1])
+    tipo.mostrarDatos()
+
+
+crearCliente(tip)
