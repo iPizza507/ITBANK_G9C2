@@ -1,15 +1,16 @@
 from asyncio.windows_events import INFINITE
+from xmlrpc.client import boolean
 from direccion import Direccion
 # importar la razon
 
 
 class Cliente:
-    def __init__(self, nombre: str, apellido: str, dni: str, direccion=[]):
+    def __init__(self, nombre: str, apellido: str, dni: str, direccion=[], razon=[]):
         self.nombre = nombre
         self.apellido = apellido
         self.dni = dni
         self.direccion = direccion
-        self.razon = "razon"
+        self.razon = razon
 
     def mostrarDatosCliente(self):
         # al atributo peliculas se le agrega una pelicula
@@ -92,7 +93,7 @@ class Black(Cliente):
         self.limite_de_transferencia_recibida = INFINITE
 
     def mostrarDatosBlack(self):
-        print('--------------DATOS GOLD--------------')
+        print('--------------DATOS BLACK--------------')
         print('Puede crear chequera?', self.puede_crear_chequera)
         print('Cantidad maxima de chequera:', self.cantidad_max_chequera)
         print('Puede tener tarjeta de credito?',
@@ -109,33 +110,43 @@ class Black(Cliente):
 
 
 # array para guardar todos los clientes
-Clientes = []
+clientesClassic = []
+clientesGold = []
+clientesBlack = []
+
+# depende qué tipo de cliente quiere ser, se creará
 
 
-def crearTipoCliente(n="gold"):
-
+def crearTipoCliente(n):
     if n == 'classic':
         dir1 = Direccion("Pampa", "457", "Lanus", "CABA", "Argentina")
-        Clientes.append(Classic("Ian", "Figueroa", "45124451", [dir1]))
-        Clientes[0].mostrarDatosCliente()
-        Clientes[0].mostrarDatosGold()
+        clientesClassic.append(Classic("Ian", "Figueroa", "45124451", [dir1]))
+        for cli in clientesClassic:
+            cli.mostrarDatosCliente()
+            cli.mostrarDatosClassic()
         masClientes()
+
     elif n == 'gold':
-        # llama a la funcion pedir datos
         dir1 = Direccion("Pampa", "457", "Lanus", "CABA", "Argentina")
-        Clientes.append(Gold("Ian", "Figueroa", "45124451", [dir1]))
-        Clientes[0].mostrarDatosCliente()
-        Clientes[0].mostrarDatosGold()
+        clientesGold.append(Gold("Ian", "Figueroa", "45124451", [dir1]))
+        for cli in clientesGold:
+            cli.mostrarDatosCliente()
+            cli.mostrarDatosGold()
         masClientes()
+
     elif n == 'black':
         dir1 = Direccion("Pampa", "457", "Lanus", "CABA", "Argentina")
-        Clientes.append(Black("Ian", "Figueroa", "45124451", [dir1]))
-        Clientes[0].mostrarDatosCliente()
-        Clientes[0].mostrarDatosGold()
+        clientesBlack.append(Black("Ian", "Figueroa", "45124451", [dir1]))
+        for cli in clientesBlack:
+            cli.mostrarDatosCliente()
+            cli.mostrarDatosBlack()
         masClientes()
+
     else:
         print('Error! Vuelva a intentar..')
         masClientes()
+
+# Agregar o no mas clientes
 
 
 def masClientes():
