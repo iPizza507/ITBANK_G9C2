@@ -1,5 +1,4 @@
 from asyncio.windows_events import INFINITE
-from xmlrpc.client import boolean
 from direccion import Direccion
 # importar la razon
 
@@ -25,7 +24,9 @@ class Classic(Cliente):
     def __init__(self, nombre, apellido, dni, direccion):
         super().__init__(nombre, apellido, dni, direccion)
         self.puede_crear_chequera = False
+        self.cantidad_max_chequera = 0
         self.puede_crear_tarjeta_credito = False
+        self.cantidad_max_tarjeta_credito = 0
         self.puede_comprar_dolar = False
         self.cuenta_corriente_negativo = False
         self.limite_de_extraccion = 10000
@@ -33,14 +34,14 @@ class Classic(Cliente):
         self.limite_de_transferencia_recibida = 150000
 
     def mostrarDatosClassic(self):
-        print('--------------DATOS Classic--------------')
-        print('Puede crear chequera?', self.puede_crear_chequera)
+        print('--------------DATOS CLASSIC--------------')
+        print('Puede crear chequera:', self.puede_crear_chequera)
         print('Cantidad maxima de chequera:', self.cantidad_max_chequera)
-        print('Puede tener tarjeta de credito?',
+        print('Puede tener tarjeta de credito:',
               self.puede_crear_tarjeta_credito)
-        print('Cantidad maxima de tarjetas de credito? ',
+        print('Cantidad maxima de tarjetas de credito:',
               self.cantidad_max_tarjeta_credito)
-        print('Puede comprar dolar? ', self.puede_comprar_dolar)
+        print('Puede comprar dolar:', self.puede_comprar_dolar)
         print('Cuenta corriente negativo máximo:',
               self.cuenta_corriente_negativo)
         print('Limite de extraccion diaria?', self.limite_de_extraccion)
@@ -64,13 +65,13 @@ class Gold(Cliente):
 
     def mostrarDatosGold(self):
         print('--------------DATOS GOLD--------------')
-        print('Puede crear chequera?', self.puede_crear_chequera)
+        print('Puede crear chequera:', self.puede_crear_chequera)
         print('Cantidad maxima de chequera:', self.cantidad_max_chequera)
-        print('Puede tener tarjeta de credito?',
+        print('Puede tener tarjeta de credito:',
               self.puede_crear_tarjeta_credito)
-        print('Cantidad maxima de tarjetas de credito? ',
+        print('Cantidad maxima de tarjetas de credito:',
               self.cantidad_max_tarjeta_credito)
-        print('Puede comprar dolar? ', self.puede_comprar_dolar)
+        print('Puede comprar dolar:', self.puede_comprar_dolar)
         print('Cuenta corriente negativo máximo:',
               self.cuenta_corriente_negativo)
         print('Limite de extraccion diaria?', self.limite_de_extraccion)
@@ -94,13 +95,13 @@ class Black(Cliente):
 
     def mostrarDatosBlack(self):
         print('--------------DATOS BLACK--------------')
-        print('Puede crear chequera?', self.puede_crear_chequera)
+        print('Puede crear chequera:', self.puede_crear_chequera)
         print('Cantidad maxima de chequera:', self.cantidad_max_chequera)
-        print('Puede tener tarjeta de credito?',
+        print('Puede tener tarjeta de credito:',
               self.puede_crear_tarjeta_credito)
-        print('Cantidad maxima de tarjetas de credito? ',
+        print('Cantidad maxima de tarjetas de credito:',
               self.cantidad_max_tarjeta_credito)
-        print('Puede comprar dolar? ', self.puede_comprar_dolar)
+        print('Puede comprar dolar:', self.puede_comprar_dolar)
         print('Cuenta corriente negativo máximo:',
               self.cuenta_corriente_negativo)
         print('Limite de extraccion diaria?', self.limite_de_extraccion)
@@ -114,10 +115,10 @@ clientesClassic = []
 clientesGold = []
 clientesBlack = []
 
+
 # depende qué tipo de cliente quiere ser, se creará
-
-
 def crearTipoCliente(n):
+
     if n == 'classic':
         dir1 = Direccion("Pampa", "457", "Lanus", "CABA", "Argentina")
         clientesClassic.append(Classic("Ian", "Figueroa", "45124451", [dir1]))
@@ -144,18 +145,21 @@ def crearTipoCliente(n):
 
     else:
         print('Error! Vuelva a intentar..')
-        masClientes()
+        crearTipoCliente()
+
 
 # Agregar o no mas clientes
-
-
 def masClientes():
+    # pregunta si quiere agregar más
     respuesta = input("Desea agregar más clientes? Y/N: ").upper()
+    # si la respuesta es Y, seleccionar tipo de cliente nuevo..
     if respuesta == "Y":
         tipoDeCliente = input('Classic, Gold o Black? ').lower()
         crearTipoCliente(tipoDeCliente)
+    # si la respuesta es N, cerrar programa..
     elif respuesta == "N":
         print("cierra App")
+    # Si no es ninguna de las anteriores, preguntar de nuevo..
     else:
         print("No te entendi, disculpame..")
         masClientes()
