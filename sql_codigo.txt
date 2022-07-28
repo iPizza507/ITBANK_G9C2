@@ -1,0 +1,33 @@
+/*creamos la clase cliente*/
+CREATE TABLE clase_cliente(
+	tipo_id INTEGER PRIMARY KEY,
+	tipo_nombre TEXT NOT NULL
+);
+
+/*insertamos los 3 tipos de clientes*/
+INSERT INTO clase_cliente(tipo_nombre)
+VALUES ('Classic'), ('Gold'), ('Black');
+
+/*verificamos*/
+SELECT *
+FROM clase_cliente
+
+/*creamos el tipo de cuenta*/
+CREATE TABLE caja_cuenta(
+	cuenta_id INTEGER PRIMARY KEY,
+	cuenta_nombre TEXT NOT NULL /*bit es 0 o 1 --> referencia a pesos o dolar*/
+);
+
+/*insertamos los 3 tipos de clientes*/
+INSERT INTO caja_cuenta (cuenta_nombre)
+VALUES ('Caja de Ahorro en pesos'), ('Caja de Ahorro en dolares');
+
+/*verificamos*/
+SELECT *
+FROM caja_cuenta
+
+/*crear la tarjeta*/
+CREATE TABLE tarjeta(
+	tarjeta_id INTEGER NOT NULL,
+	
+)
