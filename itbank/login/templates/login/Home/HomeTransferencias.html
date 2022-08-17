@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ITBANK</title>
+    <link href="/css/homeStyles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg nav-hover d-flex justify-content-between">
+            <div>
+                <img src="/imagen/logo-header.jpeg" alt="logo" class="img-footer" width="50" height="50">
+            </div>
+            <div>
+                <a class="navbar-brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-gear-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                    </svg>
+                </a>
+                <a class="navbar-brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                    </svg>
+                </a>
+                <a class="navbar-brand" href="/index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-power" viewBox="0 0 16 16">
+                        <path d="M7.5 1v7h1V1h-1z" />
+                        <path
+                            d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z" />
+                    </svg>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Page content -->
+    <div class="row main">
+        <div class="col-2">
+            <div class="sidenav">
+                <h1 id="sideTitle">ITBANK</h1>
+                <a href="./HomeCuentas.html">Cuentas</a>
+                <a href="./HomeTarjetas.html">Tarjetas</a>
+                <a href="./HomeTransferencias.html" class="subrayado">Transferencias</a>
+                <a href="./HomeInversiones.html">Inversiones</a>
+                <a href="./HomeServicios.html">Pago de Servicios</a>
+                <a href="index.html">Cerrar Sesion</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-0 row container d-flex justify-content-center align-self-start">
+                <div class="row">
+                    <div class="col">
+                        <div class="p-3 mx-auto text-center">
+                            <div class="card p-0 mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal">TRANSFERIR</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title inversiones-card-title">
+                                        <small class="text-muted fw-light">Contactos</small>
+                                    </h1>
+                                    <input type="text" id="contactoInput" placeholder="Agregar contacto">
+                                    <button type="button" class="btn btn-primary m-2" onclick="agregarContacto()">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                            <path fill-rule="evenodd"
+                                                d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                                        </svg>
+                                    </button>
+                                    <div class="d-flex ">
+                                        <ul class="col-12 d-flex flex-column align-items-start" id="listaContato">
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="p-3 mx-auto text-center">
+                            <div class="card p-0 mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal">NUEVA TRANSFERENCIA</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title inversiones-card-title">
+                                        <small class="text-muted fw-light">Nueva cuenta..</small>
+                                    </h1>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Ej: cbu.cbu.cbu"
+                                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <span class="input-group-text" id="basic-addon2">Cvu/Cbu/Alias</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input class="btn btn-primary m-2" type="submit" value="Enviar">
+                                        <div class="form-check">
+                                            <input class="form-check-input " type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Añadir a contactos
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 mx-auto text-center">
+                            <div class="card p-0 mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal">COMPROBANTES <a href="#" onclick="mostrar()">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+                                            </svg>
+                                        </a></h4>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title inversiones-card-title">
+                                        <small class="text-muted fw-light">Comprobantes..</small>
+                                    </h1>
+                                    <ul id="listasComprobantes">
+                                        <li>Comprobante 1</li>
+                                        <li>Comprobante 2</li>
+                                        <li>Comprobante 3</li>
+                                        <li>...</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <ul class="Lista-main-home">
+                <li>Accesos directos</li>
+                <li>
+                    <div class="row align-content-center">
+                        <div class="col">
+                            <button class="icon-AccesoDirecto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-box-arrow-in-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z" />
+                                    <path fill-rule="evenodd"
+                                        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                </svg>
+                            </button>
+                            <p>Descargar Aplicacion</p>
+                        </div>
+                        <div class="col">
+                            <button class="icon-AccesoDirecto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-cash-coin" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z" />
+                                    <path
+                                        d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z" />
+                                    <path
+                                        d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z" />
+                                    <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z" />
+                                </svg>
+                            </button>
+                            Solicitar Dinero
+                        </div>
+                        <div class="col">
+                            <button class="icon-AccesoDirecto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                </svg>
+                            </button>
+                            More..
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    Movimientos Recientes
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col">
+                            IMG ENEBA
+                        </div>
+                        <div class="col">
+                            -$0,92 EUR
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col">
+                            IMG ENEBA
+                        </div>
+                        <div class="col">
+                            -$0,72 EUR
+                        </div>
+                    </div>
+                </li>
+                <li>Mostrar todos</li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <footer class="d-flex align-items-center fixed-bottom">
+        <div class="d-flex col-12 justify-content-center">
+            <ul class="Lista-footer-home">
+                <li>
+                    <a class="link" href="loginvista.html">Contactanos | </a>
+                </li>
+                <li>
+                    <a class="link" href="loginvista.html"> Privicidad |</a>
+                </li>
+                <li>
+                    <a class="link" href="loginvista.html"> En todo el mundo |</a>
+                </li>
+                <li>
+                    <a class="link" href="loginvista.html"> Acuerdo legales</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/Js/homeTransferencias.js"></script>
+</body>
+
+</html>

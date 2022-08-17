@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+section{
+    background-image: url(../img/fondoLogin.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+}
+.img-header{
+    height: 70px;
+    margin: 0 20px;
+}
+.container{
+    width: 100%;
+    padding: 15px;
+}
+.formulario{
+    background: none;
+    padding: 3px;
+    margin: 20px auto;
+    width: 500px;
+    border-radius: 2%;
+}
+.title-form{
+    text-align: center;
+    color: #1a2537;
+    font-size: 70px;
+    margin: 10px;
+}
+.input-form{
+    font-size: 20px;
+    width: 90%; 
+    padding: 10px;
+    border: 2px solid #aaa;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background:  #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 25px 0;
+}
+.button:hover{
+    background: cadetblue;
+}
+.link{
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 600;
+}
+.link:hover{
+     color: cadetblue;
+}
+.Lista-footer{
+    background-color:none;
+    list-style:none;
+    border-radius: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width:600px){
+    .formulario{
+        width: 100%;
+        border-radius: 0px;
+    }
+}
